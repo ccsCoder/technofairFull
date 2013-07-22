@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TechnoFlair Labs</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" href="css/jquery.vegas.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/myStyles.css"/>
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.vegas.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fittext.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $.vegas('slideshow', {
+                    delay:7000,
+                    preload:true,
+                    loading:true,
+                    backgrounds:[
+                      { src:'images/image001.jpg', fade:3000 },
+                      { src:'images/image002.jpg', fade:3000 },
+                      { src:'images/image003.jpg', fade:3000 },
+                      { src:'images/image004.jpg', fade:3000 },
+                      { src:'images/image005.jpg', fade:3000 },
+                      { src:'images/image006.jpg', fade:3000 }
+                    ]
+                  })('overlay'); 
+                
+                $("#textHeader").fadeIn(3000,function() {
+                    $(this).fitText({maxFontSize:'95px'});
+                });
+            });
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1 id="textHeader">TechnoFlair Labs</h1>
+    </body>
+</html>
