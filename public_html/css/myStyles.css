@@ -60,21 +60,23 @@ h1#textHeader {
 }
 
 .descriptionHeader {
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: larger;
+    color: #0088cc;
+    
+    
 }
 
+.darkerBackground {
+    background: rgba(0,0,0,0.4);
+}
 .descriptionContent {
     color: white;
     font-size: larger;
     
+    
 }
 
 .descriptionContainer {
-    border: 1px solid #0088cc;
-    border-radius: 6px;
-    background-color: black;
-    opacity: 0.6;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0,0,0,0.2);
 }
