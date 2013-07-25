@@ -16,17 +16,65 @@
 h1#textHeader {
     background: rgba(0,0,0,0.2);
     text-align: center;
-    color: whitesmoke;
+    color: lightgray;
     /*font: 95px/1 "Impact";*/
     font: 95px/1 "Times";
     font-style: italic;
     /*font: 95px/1 "Helevetica Neue";*/
     /*text-transform: uppercase;*/
     display: block;
-    text-shadow: black -4px 4px 0,
-        black -2px 2px 0,
-        red -3px 3px 0,
-        red -4px 4px 0;
+    text-shadow: 
+        /*white -4px -4px 0;*/
+        /*white -2px 2px 0,*/
+        /*white -3px 3px 0,*/
+        white 2px 2px 0;
     margin: auto auto 5%;
-    display:none;
+    /*display:none;*/
+    
+}
+
+.spacer {  margin-top: 10%; }
+
+.footerText {
+    color: white;
+    font-size:smaller;
+    margin-top: 20px;
+    
+}
+
+.companyName {
+    font-variant: small-caps;
+    /*font-size: larger;*/
+    color: yellowgreen;
+    font-style: italic;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+/*.navigableText {
+    font-size: 24pt; 
+}*/
+
+.navigableText li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.descriptionHeader {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.descriptionContent {
+    color: white;
+    font-size: larger;
+    
+}
+
+.descriptionContainer {
+    border: 1px solid #0088cc;
+    border-radius: 6px;
+    background-color: black;
+    opacity: 0.6;
 }
