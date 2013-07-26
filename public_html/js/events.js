@@ -2,24 +2,27 @@ function addNavbarEvents() {
     $("#navigationBar li").each(function(key,value) {
         $(this).bind("click",function(event) {
            var classToSelect = $(this).attr("class");
-           console.debug($("."+classToSelect));
            $("#navigationBar li").removeClass("active");
            $(this).addClass("active");
            
-           $(".descriptionContainer:visible").animate({'margin-left': ['+6000', 'swing'],
-               //height: ['toggle', 'swing']
-           },
-           2000,function(e) {
-               //done
-               $(this).hide();
-               $("."+classToSelect).slideDown("slow");
-           });
-           
-           
-           
-           
+            makeThemPuffOut(500,$(".descriptionContainer:visible"));
+            $("."+classToSelect+":last").hide().delay(500*5).slideDown("slow");
            
         });
     }); 
+}
+
+function makeThemPuffOut(delayDuration,parent) {
+    //console.log(parent);
+    
+    $(parent).children().each(function(key,value) {
+        console.log(delayDuration);
+        $(this).slideUp(delayDuration);
+        delayDuration+=200;
+        
+    });
+    
+    
+    
 }
 
