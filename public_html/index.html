@@ -13,10 +13,11 @@
         <script type="text/javascript" src="js/jquery.vegas.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                $.vegas('slideshow', {
-//                    delay:7000,
+                    delay:7000,
                     preload:true,
                     loading:true,
                     backgrounds:[
@@ -38,6 +39,11 @@
                 
                 //$("#textHeader").fadeIn(2000);
                 $("#textHeader").fitText({maxFontSize:'95px'});
+                $("#navigationBar").hide().delay(3000).slideDown("slow",function(e) {
+                    $(".resume").slideDown("slow");
+                });
+                
+                addNavbarEvents();
             });
             
             
@@ -53,12 +59,12 @@
             <div class="row-fluid">
                 <div class="span2 offset1">
                     <!-- sidebar -->
-                    <ul class="nav nav-pills nav-stacked navigableText">
-                            <li class="active">  <a href="#">A Web Resume</a>  </li>   
-                            <li><a href="#">Three Dimensional ?</a></li>
-                            <li><a href="#">Making JS fetch Tweets</a></li> 
-                            <li><a href="#">A Clean Design, you say?</a></li> 
-                            <li><a href="#">Responsive Slideshows</a></li> 
+                    <ul class="nav nav-pills nav-stacked navigableText" id="navigationBar">
+                            <li class="resume">  <a href="#">A Web Resume</a>  </li>   
+                            <li class="3d"><a href="#">Three Dimensional ?</a></li>
+                            <li class="tweets"><a href="#">Making JS fetch Tweets</a></li> 
+                            <li class="hire"><a href="#">A Clean Design, you say?</a></li> 
+                            <li class="flair"><a href="#">Responsive Slideshows</a></li> 
                             
                     </ul>
                 </div>
@@ -67,7 +73,7 @@
                     <div class="container-fluid">
                         <div class="row-fluid">
                             <div class="span6 offset2">
-                                <div class='descriptionContainer'>
+                                <div class='descriptionContainer resume'>
                                     <!--<p class="descriptionHeader text-center">-->
                                     <h3 class="text-center descriptionHeader">A Web Resume.</h3>
                                     <!--</p>-->
@@ -80,6 +86,59 @@
                                         <a class="btn btn-info  " href="#">Launch Demo&Gt;</a>  
                                     </p>
                                 </div>
+                                <div class='descriptionContainer tweets'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Web Resume.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >So, what do you do if you're a Web Developer ? and you need to showcase your work? </p>
+                                    <p class="descriptionContent text-left" >You create a Web Resume.</p>
+                                    <p class="descriptionContent text-left"> Notice how an Animated Background goes nicely with it. This was created using 
+                                    only CSS2 and plain Old jQuery.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info  " href="#">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer 3d'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Web Resume.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >So, what do you do if you're a Web Developer ? and you need to showcase your work? </p>
+                                    <p class="descriptionContent text-left" >You create a Web Resume.</p>
+                                    <p class="descriptionContent text-left"> Notice how an Animated Background goes nicely with it. This was created using 
+                                    only CSS2 and plain Old jQuery.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info  " href="#">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer hire'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Web Resume.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >So, what do you do if you're a Web Developer ? and you need to showcase your work? </p>
+                                    <p class="descriptionContent text-left" >You create a Web Resume.</p>
+                                    <p class="descriptionContent text-left"> Notice how an Animated Background goes nicely with it. This was created using 
+                                    only CSS2 and plain Old jQuery.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info  " href="#">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer flair'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Web Resume.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >So, what do you do if you're a Web Developer ? and you need to showcase your work? </p>
+                                    <p class="descriptionContent text-left" >You create a Web Resume.</p>
+                                    <p class="descriptionContent text-left"> Notice how an Animated Background goes nicely with it. This was created using 
+                                    only CSS2 and plain Old jQuery.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info  " href="#">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                
                             </div>
                             <div class="span4"></div>
                         </div>
