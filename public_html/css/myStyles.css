@@ -8,8 +8,9 @@
 
 .companyName {
     color:yellowgreen;
-    font-size: 48pt;
+    /*font-size: 48pt;*/
     font-weight:bold;
+    
 
 }
 
@@ -23,22 +24,35 @@ h1#textHeader {
     /*font: 95px/1 "Helevetica Neue";*/
     /*text-transform: uppercase;*/
     display: block;
-    text-shadow: 
+    /*text-shadow:*/ 
         /*white -4px -4px 0;*/
         /*white -2px 2px 0,*/
         /*white -3px 3px 0,*/
-        white 2px 2px 0;
+        /*white 2px 2px 0;*/
     margin: auto auto 5%;
     /*display:none;*/
     
 }
 
-.spacer {  margin-top: 10%; }
+h1#textHeader:hover {
+   cursor: pointer;
+   text-shadow: black 2px 2px 0;
+   color:white;
+}
+
+.spacer {  margin-top: 6%; }
 
 .footerText {
     color: white;
+    /*color: #0088cc;*/
     font-size:smaller;
     margin-top: 20px;
+    background-color: black;
+    /*opacity: 0.;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     
 }
 
@@ -66,7 +80,7 @@ h1#textHeader {
 }
 
 .darkerBackground {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.8);
 }
 .descriptionContent {
     color: white;
@@ -77,8 +91,9 @@ h1#textHeader {
 }
 
 .descriptionContainer {
-    min-width: 100%;
-    min-height: 100%;
-    background: rgba(0,0,0,0.2);
+/*    min-width: 100%;
+    min-height: 100%;*/
+    background: rgba(0,0,0,0.6);
     display: none;
+    border-radius: 10px;
 }
